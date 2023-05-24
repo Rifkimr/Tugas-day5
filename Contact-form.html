@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>halaman-contact</title>
+    <link rel="icon" href="assets/images/img/rifki.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/81634d0f93.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav>
+      <div id="left-nav">
+        <ul>
+          <li>
+            <a class="nav-option" href="https://dumbways.id/" target="_blank">
+              <img src="assets/images/img/icon.png" alt="DumbWays ID logo" />
+            </a>
+          </li>
+
+          <li>
+            <a class="nav-option" href="card.html" style="font-weight: normal"
+              >HOME</a
+            >
+          </li>
+
+          <li>
+            <a class="nav-option" href="card.html" style="font-weight: normal"
+              >MY PROJECT</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div id="right-nav">
+        <a href="#">
+          <button type="button">Contact Me</button>
+        </a>
+      </div>
+    </nav>
+
+    <!-- ------------------------------------------------------------------------------------------------- -->
+
+    <h2 class="page-title">GET IN TOUCH</h2>
+
+    <form>
+      <div>
+        <label class="input-form" for="input-name">Name</label>
+        <input
+          type="text"
+          placeholder="rifki m ramdan"
+          id="input-name"
+          autocomplete="off"
+          autocapitalize="words"
+          required
+        />
+      </div>
+
+      <div>
+        <label class="" for="imput-name">Email</label>
+        <input
+          type="email"
+          placeholder="rifkimr@gmail.com"
+          id="input-email"
+          autocomplete="off"
+          required
+        />
+      </div>
+
+      <div>
+        <label class="" for="input-phone">Phone</label>
+        <input
+          type="number"
+          placeholder="+62"
+          id="input-phone"
+          autocomplete="off"
+          required
+        />
+      </div>
+
+      <div>
+        <label class="" for="input-subject">Subject</label>
+        <select id="input-subject" required>
+          <option value="" hidden>Select</option>
+          <option value="Suggestion">Ui ux</option>
+          <option value="Collaboration request">Frontend</option>
+          <option value="Meeting request">Backend</option>
+          <option value="Something else">Fullstack</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="input-message">Your Message</label>
+        <textarea
+          placeholder="Apa yang sedang kamu pikirkan..!"
+          id="input-message"
+          autocomplete="off"
+          autocapitalize="sentences"
+        ></textarea>
+      </div>
+
+      <button class="submit-button" type="button" onclick="submitData()">
+        Submit
+      </button>
+    </form>
+
+    <script src="js/contact.js"></script>
+  </body>
+</html>
