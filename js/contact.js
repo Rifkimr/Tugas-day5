@@ -6,7 +6,7 @@ function submitData() {
   let message = document.getElementById("input-message").value;
 
   if (name == "") {
-      return alert("isian hela blog");
+      return alert("Nama harus di isi");
   } else if (email == "") {
       return alert("Email harus diisi!");
   } else if (phone == "") {
